@@ -30,5 +30,37 @@ The payment model represents the payment details for a reservation with fields r
 
 # Testing
 We tested the end points manually using Postman covering the HTTP methods, GET, POST, PUT and DELETE as below;
+## 1. GET
+The GET method is used to retrieve data from the server. In Postman, we set the method to GET and put the url of the customer 2 and the data was returned as follows;
+![Code](https://github.com/CynthiaKiconco/HotelRoomReservationSystem-Group10/blob/main/GET_result.png)
+
+## 2. POST
+The POST method sends data to the server to create a resource. In Postman, we set the method to POST and put the url of the roomtypes page to add a new room type and its description and the result was as follows;
+![Code](https://github.com/CynthiaKiconco/HotelRoomReservationSystem-Group10/blob/main/POST_result.png)
+
+## 3. PUT
+The PUT method is used to update an existing resource. In Postman, we set the method to POST and updated the information of customer 3 in the system as follows;
+
+Before
+![Code](https://github.com/CynthiaKiconco/HotelRoomReservationSystem-Group10/blob/main/PUT_before.png)
+
+After
+![Code]((https://github.com/CynthiaKiconco/HotelRoomReservationSystem-Group10/blob/main/PUT_after.png))
+
+## 4. DELETE
+The DELETE method is used to delete a resource. In Postman, we set the method to DELETE and deleted a reservation made by a customer as shown below;
+
+Before: this is the data in the system for the reservation for a customer before deleting
+![Code](https://github.com/CynthiaKiconco/HotelRoomReservationSystem-Group10/blob/main/delete_before.png)
+
+After: this is the result after sending the delete request is sent on Postman. There is no content in the output
+![Code](https://github.com/CynthiaKiconco/HotelRoomReservationSystem-Group10/blob/main/delete_after.png)
+
+## Conclusion
+
+
+
+
+
 
 
