@@ -45,7 +45,7 @@ Before
 ![Code](https://github.com/CynthiaKiconco/HotelRoomReservationSystem-Group10/blob/main/PUT_before.png)
 
 After
-![Code]((https://github.com/CynthiaKiconco/HotelRoomReservationSystem-Group10/blob/main/PUT_after.png))
+![Code](https://github.com/CynthiaKiconco/HotelRoomReservationSystem-Group10/blob/main/PUT_after.png)
 
 ## 4. DELETE
 The DELETE method is used to delete a resource. In Postman, we set the method to DELETE and deleted a reservation made by a customer as shown below;
