@@ -26,6 +26,16 @@ The payment model represents the payment details for a reservation with fields r
 
 ## 2. Views
 ## 3. Serialziers
+CustomerSerializer: serializes the Customer model and ensures that each customer has a unique email address.
+
+RoomTypeSerializer: serializes the RoomType model. Here, no special validation rules were needed.
+
+RoomSerializer: serializes the Room model and includes a validation rule to ensure that room_number is unique.
+
+ReservationSerializer: serializes the Reservation model and implements validation to check that the check_in date is before the check_out date.
+
+PaymentSerializer: serializes the Payment model, validates that the payment amount matches the cost of the reservation and checks that a payment is not associated with an already completed reservation.
+
 ## 4. URLs
 
 # Testing
