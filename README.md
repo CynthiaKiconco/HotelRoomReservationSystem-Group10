@@ -63,10 +63,9 @@ The DELETE method is used to delete a resource. In Postman, we set the method to
 Before: this is the data in the system for the reservation for a customer before deleting
 ![Code](https://github.com/CynthiaKiconco/HotelRoomReservationSystem-Group10/blob/main/delete_before.png)
 
-After: this is the result after sending the delete request is sent on Postman. There is no content in the output
+After: this is the result after the delete request is sent on Postman. There is no content in the output
 ![Code](https://github.com/CynthiaKiconco/HotelRoomReservationSystem-Group10/blob/main/delete_after.png)
 
-## Conclusion
 
 
 
