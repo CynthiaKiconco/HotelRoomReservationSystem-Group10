@@ -24,12 +24,17 @@ The reservation model represents a booking made by a customer for a specific roo
 
 The payment model represents the payment details for a reservation with fields reservation, amount, payment_date and status. The payment model is connected to the reservation model where each reservation has one corresponding payment.
 
-## 2. Views
+## 2. Views/viewSets
 CustomerViewSet: manages the CRUD operations for the Customer model and allows actions like listing all customers, retrieving a specific customer, creating a new customer, updating customer details, and deleting a customer.
+
 RoomTypeViewSet: handles CRUD operations for the RoomType model and enables the management of room types available in the hotel.
+
 RoomViewSet: manages the CRUD operations for the Room model and provides functionality to list, create, update, and delete room entries, as well as check room availability.
+
 ReservationViewSet: handles the CRUD operations for the Reservation model and supports creating, updating, and managing reservations made by customers.
+
 PaymentViewSet: manages the CRUD operations for the Payment model and allows actions related to handling payment details associated with reservations.
+
 ## 3. Serialziers
 CustomerSerializer: serializes the Customer model and ensures that each customer has a unique email address.
 
@@ -42,12 +47,16 @@ ReservationSerializer: serializes the Reservation model and implements validatio
 PaymentSerializer: serializes the Payment model, validates that the payment amount matches the cost of the reservation and checks that a payment is not associated with an already completed reservation.
 
 ## 4. URLs
-URLs
 Each URL pattern serves the purpose of directing HTTP requests to the correct viewset, ensuring that the appropriate model's data is handled according to the requested action (e.g., retrieve,create,update,delete), as below
+
 router.register(r'customers', CustomerViewSet): Routes requests like /api/customers/ to the CustomerViewSet.
+
 router.register(r'roomtypes', RoomTypeViewSet): Routes requests like /api/roomtypes/ to the RoomTypeViewSet.
+
 router.register(r'rooms', RoomViewSet): Routes requests like /api/rooms/ to the RoomViewSet.
+
 router.register(r'reservations', ReservationViewSet): Routes requests like /api/reservations/ to the ReservationViewSet.
+
 router.register(r'payments', PaymentViewSet): Routes requests like /api/payments/ to the PaymentViewSet.
 
 # Testing
