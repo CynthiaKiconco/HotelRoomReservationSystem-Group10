@@ -43,12 +43,12 @@ PaymentSerializer: serializes the Payment model, validates that the payment amou
 
 ## 4. URLs
 URLs
-Each URL pattern serves the purpose of directing HTTP requests to the correct viewset, ensuring that the appropriate model's data is handled according to the requested action (e.g., retrieve, create, update, delete), as below
+Each URL pattern serves the purpose of directing HTTP requests to the correct viewset, ensuring that the appropriate model's data is handled according to the requested action (e.g., retrieve,create,update,delete), as below
 router.register(r'customers', CustomerViewSet): Routes requests like /api/customers/ to the CustomerViewSet.
 router.register(r'roomtypes', RoomTypeViewSet): Routes requests like /api/roomtypes/ to the RoomTypeViewSet.
 router.register(r'rooms', RoomViewSet): Routes requests like /api/rooms/ to the RoomViewSet.
 router.register(r'reservations', ReservationViewSet): Routes requests like /api/reservations/ to the ReservationViewSet.
-router.register(r'payments', PaymentViewSet): Routes requests like /api/payments/ to the PaymentViewSet
+router.register(r'payments', PaymentViewSet): Routes requests like /api/payments/ to the PaymentViewSet.
 
 # Testing
 We tested the end points manually using Postman covering the HTTP methods, GET, POST, PUT and DELETE as below;
